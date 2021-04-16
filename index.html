@@ -1,19 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
+
 	<head>
 		<meta charset="utf-8">
 		<title>Tama</title>
-		<link href="tama.css" rel="stylesheet">
+
 	</head>
+
 	<body>
 		<div id="tamagotchi">
-			<img id="tama" alt="Tama" src="http://chloecabot.com/mmi/M3203/img/tama_alive.png"/>
+			<img id="tama" alt="Tama" src="https://github.com/aliceokodomo/tama/blob/main/alivedog.png?raw=true" width="200px" height="200px">
+				<img id="play" alt="Ballon" src="https://github.com/aliceokodomo/tama/blob/main/balle.png?raw=true" width="200px" height="200px">
 			<div id="controls">
 				<p>Appétit : <span id="hunger">0</span></p>
+				<p>Soif : <span id="thirst">0</span></p>
+				<p>Maladie: <span id="sickness">0</span></p>
 				<p>Bonheur : <span id="happiness">100</span></p>
-				<img alt="Bol de nourriture" src="http://chloecabot.com/mmi/M3203/img/tama_bowl.png"/>
-				<input type="text" id="food" value="0"/><button id="go">Nourrir</button>
+				<img alt="Bol de nourriture" src="https://github.com/aliceokodomo/tama/blob/main/foodbowl123-04.png?raw=true width="100px" height="100px""/>
+				<form>
+				<input type="number" name = "addClick" id="food" value="0"/>
+				<button type = "button" class="pure-button pure-button-primary" onclick = "addToNumber()" id="go">I am hungry !</button>
+				</form>
+
+				<img alt="Bol d'eau" src="https://github.com/aliceokodomo/tama/blob/main/fullwater.png?raw=true" width="100px" height="100px">
+				<input type="text" id="water" value="0"/>
+				<button id="goWater">I am tirsty !</button>
+				<img alt="Médicaments" src="https://github.com/aliceokodomo/tama/blob/main/pill.png?raw=true" width="100px" height="100px"/>
+				<input type="text" id="pills" value="0"/>
+				<button id="goPills">Make me feel better !</button>
 			</div>
 		</div>
-<script src="main.js"></script>
+		<script src="main.js"></script>
 	</body>
-</html>
+	</html>
