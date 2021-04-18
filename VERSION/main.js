@@ -9,7 +9,7 @@
 
 			// tamaLife contrôle le cycle de vie de Tama
 			function tamaLife(){
-				// Pour ajouter 5 à la faim et la soif, on modifie hunger.textContent = le contenu textuel du span
+				// Pour ajouter 5 à la faim, la soif et la maladie, on modifie hunger, thirst ou sickness.textContent = le contenu textuel du span
 				// Et on convertit bien la valeur en nombre entier avec parseInt pour éviter un bug
 				hunger.textContent  = parseInt(hunger.textContent) + 5;
 				thirst.textContent  = parseInt(thirst.textContent) + 5;
