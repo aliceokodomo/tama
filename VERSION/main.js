@@ -5,8 +5,6 @@
 			var tama = document.getElementById("tama"); // L'image de Tama
 			var play = document.getElementById ("play"); //L'image du ballon
 
-
-
 			// tamaLife contrôle le cycle de vie de Tama
 			function tamaLife(){
 				// Pour ajouter 5 à la faim, la soif et la maladie, on modifie hunger, thirst ou sickness.textContent = le contenu textuel du span
@@ -16,7 +14,6 @@
 				sickness.textContent  = parseInt(sickness.textContent) + 5;
 				// Même chose => Le contenu textuel du bonheur = la valeur entière du bonheur -10
 				happiness.textContent = parseInt(happiness.textContent) - 10;
-
 
 				// Si Tama est malheureux
 				if (parseInt(hunger.textContent) >= 70 || parseInt(happiness.textContent) <= 30){
@@ -32,7 +29,6 @@
 			else {
 					tama.src = "https://github.com/aliceokodomo/tama/blob/main/alivedog.png?raw=true";
 				}
-
 
 				// Si Tama est mort
 				if (parseInt(happiness.textContent) <= 0 || parseInt(hunger.textContent) >= 100){
@@ -53,7 +49,6 @@
 		}
 
 	}
-
 
 			// setHappiness contrôle le bonheur de Tama
 			function setHappiness(){
